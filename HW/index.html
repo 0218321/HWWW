@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>是時候該讓眼睛休息囉!</title>
+
+	<script type="text/javascript">
+
+		function unlight(){
+			document.getElementsByName("light")[0].setAttribute("src","img/unlight.png");
+			document.body.style.backgroundColor='#222222';
+			document.getElementById("heading").style.color = "#222222";
+		}
+
+		function lighton() {
+  			 document.getElementsByName("light")[0].setAttribute("src","img/light.png");
+  			 document.body.style.backgroundColor='#aaa';
+  			 document.getElementById("heading").style.color = "#FFF";
+		}
+        var regret = setTimeout(getback, 30000);
+		    function getback(){
+		    alert('可以再看一下了~');
+		    lighton();
+		
+		}
+
+		
+		var timeoutID = setTimeout(myAlert, 18000);
+		function myAlert() {
+		    alert('該休息囉~');
+		    unlight();
+		}
+
+	</script>
+</head>
+<body>
+	<div id="room">
+		<div style="height:32vh;width:50vw;margin:0 42vw;">
+	
+		</div>
+		<h1 id="heading">適度使用，放鬆心情</h1>
+		<img src="img/水母亮亮.png" alt="" class="imgg">		
+		<h1 style="color: #aaa;">讓眼休息，靈魂之窗生生不息<br>科學用眼，美好無限。</h1>
+	</div>
+</body>
+</html>
